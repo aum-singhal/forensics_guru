@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    background-color: #ffcf00;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: black;
+}
+
+.cir1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    top: -120px;
+    right: -120px;
+    border-radius: 100%;
+    z-index: 10;
+    animation: comein 1s ease-in forwards;
+}
+
+@keyframes comein {
+    0%{
+        transform: scale(0) translateX(-400px) translateY(-400px);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.cir2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    top: 85vh;
+    left: -140px;
+    border-radius: 100%;
+    z-index: 10;
+    
+}
+
+#head{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Righteous', cursive;  
+}
+
+.land{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: #ffcf00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    z-index: 10;
+}
+.right{
+    width: 40%;
+}
+
+.homeimage{
+    height: 80%;
+    width: 80%;
+    animation: laptop 3s forwards;
+}
+
+@keyframes laptop {
+    0%{
+        transform: scale(0);
+    }
+
+    70%{
+        transform: scale(1) rotate(720deg);
+    }
+
+    90%{
+        transform: scale(1.3) rotate(720deg);
+    }
+
+    100%{
+        transform: scale(1) rotate(720deg);
+    }
+
+}
+
+.pagehead{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 4rem;
+}
+
+.shopnow{
+    padding: 12px 20px;
+    background-color: black;
+    border-radius: 7px;
+    font-size: 20px;
+    color: white;
+    display: inline;
+    width: 150px;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: 'Righteous', cursive;
+}
+
+.enquiery{
+    width: 100vw;
+    height: 100vh;
+    background: #f3f6f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquier{
+    width: 60%;
+    background-color: #ffcf00;
+    display: flex;
+    min-height: 55%;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 35px;
+    width: 60%;
+    background-color: black;
+    color: white;
+    border-radius: 0 30px 30px 0;
+}
+
+form > div{
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+form > div > input, form > div > textarea{
+    width: 100%;
+    padding: 5px 7px;
+    font-size: 13px;
+    border-radius: 7px;
+    border: 1px solid;
+    font-family: 'Source Code Pro', monospace;
+}
+
+form > input{
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+    background-color: #ffcf00;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
